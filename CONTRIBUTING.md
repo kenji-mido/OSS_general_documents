@@ -41,7 +41,7 @@ In order to maintain proper traceability of contributions, we require that you a
 - Keep API compatibility in mind when you change code in core functionality. Any non-backward-compatible public API changes, i.e. breaking changes to header files in the `edge-virtualization-platform/src/` folder, will require a major version increment.
 - Include a license header at the top of all new files.
 - Please avoid including unrelated commits and changes in your PR branch.
-- Before submitting a PR, test locally. Run formatting checks and unit tests on your development machine. See [the build instructions](docs/BUILD.md) for details.
+- Before submitting a PR, test locally. Run formatting checks and unit tests on your development machine. See [the build instructions](docs/README.md) for details.
 - Send a PR and work with us until it is merged. Contributions may need some modifications, so a few rounds of review and fixing may be necessary.
 - For quick merging, the contribution should be short, and concentrated on a single feature or topic. The larger the contribution is, the longer it takes to review and merge.
 - Include as much context as possible: What problem does your PR solve, how does it solve it, and why is it important?
