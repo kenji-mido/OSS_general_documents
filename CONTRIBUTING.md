@@ -55,4 +55,4 @@ Bear in mind that when you contribute a new feature, the maintenance burden is t
 
 ## License and Copyright
 
-Contributors accept that their contributions are made under the Apache-2.0 license. All new files should include the Apache-2.0 standard license header where possible. See the [LICENSE](edge-virtualization-platform/LICENSE) file for the full text of this license.
+Contributors accept that their contributions are made under the Apache-2.0 license. All new files should include the Apache-2.0 standard license header where possible. See the [LICENSE](LICENSE) file for the full text of this license.
