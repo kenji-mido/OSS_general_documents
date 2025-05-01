@@ -1,4 +1,4 @@
-Last Updated and Effective: 30th September, 2024
+Last Updated and Effective: 30th May, 2025
 
 **Privacy Policy on SSS Open-Source Projects**
 
