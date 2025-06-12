@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-We gratefully accept contributions from the community. Please take a moment to review this document and our [Code of Conduct](CODE_OF_CONDUCT.md) in order to make the contribution process efficient and pleasant for everyone involved.
+We gratefully accept contributions from the community. Please take a moment to review this document, our [Code of Conduct](CODE_OF_CONDUCT.md), and our [Privacy Policy](PrivacyPolicy.md) in order to make the contribution process efficient and pleasant for everyone involved.
 
 ## Bug Reports
 
