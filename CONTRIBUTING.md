@@ -24,7 +24,7 @@ If you find yourself wishing for a feature that doesn't exist, you are probably 
 > [!WARNING]
 > Do not use public issues to report security vulnerabilities: contact us directly instead.
 
-If you think that you have identified a security vulnerability in Edge Device Core, please send us your report with as much context as possible via [our contact form](https://support.aitrios.sony-semicon.com/hc/en-us/requests/new).
+If you think that you have identified a security vulnerability in AITRIOS Edge Device Core, please send us your report with as much context as possible via [our contact form](https://support.aitrios.sony-semicon.com/hc/en-us/requests/new).
 
 ## Contributing Code, Tests, and Documentation
 
@@ -39,7 +39,7 @@ In order to maintain proper traceability of contributions, we require that you a
 - Fork the repository on GitHub to start making your changes. As a general rule, you should use the "main" branch as a basis.
 - Include unit tests when you contribute new features, as they help to prove that your code works correctly and guard against future breaking changes.
 - Bug fixes also generally require unit tests, because the presence of bugs usually indicates insufficient test coverage.
-- Keep API compatibility in mind when you change code in core functionality. Any non-backward-compatible public API changes.
+- Keep API compatibility in mind when you change code in core functionality.
 - Include a license header at the top of all new files.
 - Please avoid including unrelated commits and changes in your PR branch.
 - Before submitting a PR, test locally. Run formatting checks and unit tests on your development machine. See [the build instructions](README.md) for details.
