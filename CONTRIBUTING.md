@@ -24,7 +24,7 @@ If you find yourself wishing for a feature that doesn't exist, you are probably 
 > [!WARNING]
 > Do not use public issues to report security vulnerabilities: contact us directly instead.
 
-If you think that you have identified a security vulnerability in Edge Virtualization Platform(EVP), please send us your report with as much context as possible via [our contact form](https://support.aitrios.sony-semicon.com/hc/en-us/requests/new).
+If you think that you have identified a security vulnerability in SensCord, please send us your report with as much context as possible via [our contact form](https://support.aitrios.sony-semicon.com/hc/en-us/requests/new).
 
 ## Contributing Code, Tests, and Documentation
 
@@ -39,17 +39,17 @@ In order to maintain proper traceability of contributions, we require that you a
 - Fork the repository on GitHub to start making your changes. As a general rule, you should use the "main" branch as a basis.
 - Include unit tests when you contribute new features, as they help to prove that your code works correctly and guard against future breaking changes.
 - Bug fixes also generally require unit tests, because the presence of bugs usually indicates insufficient test coverage.
-- Keep API compatibility in mind when you change code in core functionality. Any non-backward-compatible public API changes, i.e. breaking changes to header files in the `edge-virtualization-platform/src/` folder, will require a major version increment.
+- Keep API compatibility in mind when you change code in core functionality. Any non-backward-compatible public API changes, i.e. breaking changes to header files in the `senscord/src/` folder, will require a major version increment.
 - Include a license header at the top of all new files.
 - Please avoid including unrelated commits and changes in your PR branch.
-- Before submitting a PR, test locally. Run formatting checks and unit tests on your development machine. See [the build instructions](docs/README.md) for details.
+- Before submitting a PR, test locally. Run formatting checks and unit tests on your development machine. See [the build instructions](README.md) for details.
 - Send a PR and work with us until it is merged. Contributions may need some modifications, so a few rounds of review and fixing may be necessary.
 - For quick merging, the contribution should be short, and concentrated on a single feature or topic. The larger the contribution is, the longer it takes to review and merge.
 - Include as much context as possible: What problem does your PR solve, how does it solve it, and why is it important?
 
 Our team members will review your PR, and once it is approved and passes continuous integration checks it will be ready to merge.
 
-Bear in mind that when you contribute a new feature, the maintenance burden is transferred to the edge-virtualization-platform team. This means that the benefit of the contribution must be compared against the cost of maintaining the feature.
+Bear in mind that when you contribute a new feature, the maintenance burden is transferred to the senscord team. This means that the benefit of the contribution must be compared against the cost of maintaining the feature.
 
 > [!WARNING]
 > By submitting a PR, you agree to license your work under the same license as that used by the project.
