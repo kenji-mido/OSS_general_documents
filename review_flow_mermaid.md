@@ -43,7 +43,7 @@ sequenceDiagram
   actor M as Internal Reviewers
   actor T as 3rd Party Developer
   participant SSS as SSS/public Repo
-  participant I as Private Workflow in a private Repo
+  participant I as Public Workflow in a public Repo
   T ->> SSS: Fork action
   create participant F as Forked Repo
   SSS ->> F: Fork created
