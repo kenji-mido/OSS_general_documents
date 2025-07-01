@@ -8,7 +8,7 @@ body:
     attributes:
       label: 提案の概要
       description: どんな機能を追加・改善したいか？
-      placeholder: 例: ログ出力のレベルを動的に変更できるようにする
+      placeholder: "例: ログ出力のレベルを動的に変更できるようにする"
     validations:
       required: true
   - type: textarea

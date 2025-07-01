@@ -12,7 +12,7 @@ body:
     attributes:
       label: バグの概要
       description: 何が起きたのか、簡潔に説明してください。
-      placeholder: 例: 起動時にアプリがクラッシュする
+      placeholder: "例: 起動時にアプリがクラッシュする"
     validations:
       required: true
   - type: textarea
