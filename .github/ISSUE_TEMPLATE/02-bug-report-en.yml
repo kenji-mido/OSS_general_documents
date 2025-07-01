@@ -1,0 +1,43 @@
+name: Bug Report (English)
+description: Use this form to report any bugs or unexpected behavior.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please provide as much detail as possible to help us reproduce the issue.
+  - type: input
+    id: overview
+    attributes:
+      label: Summary
+      description: What happened?
+      placeholder: e.g. The app crashes on startup.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a step-by-step guide.
+      placeholder: |
+        1. Click "Start"
+        2. Enter `foo`
+        3. Crash occurs
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS, version, execution method (CLI/Docker/etc.)
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional Information
+      description: Screenshots, logs, or anything else that might help.

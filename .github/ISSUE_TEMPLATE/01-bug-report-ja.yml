@@ -1,0 +1,43 @@
+name: バグ報告（日本語）
+description: 不具合やバグを見つけたときはこちらから報告してください。
+title: "[バグ] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        以下の項目をできる範囲で記入してください。再現手順や環境があると解決がスムーズになります。
+  - type: input
+    id: overview
+    attributes:
+      label: バグの概要
+      description: 何が起きたのか、簡潔に説明してください。
+      placeholder: 例: 起動時にアプリがクラッシュする
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: どのような操作でバグが発生するか、手順を示してください。
+      placeholder: |
+        1. `hoge` をクリック
+        2. `fuga` を入力
+        3. クラッシュする
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待される動作
+      description: 本来はどう動作してほしかったかを書いてください。
+  - type: textarea
+    id: env
+    attributes:
+      label: 環境情報
+      description: OS、バージョン、実行方法（CLI/Docker など）など。
+  - type: textarea
+    id: extra
+    attributes:
+      label: 補足情報
+      description: スクリーンショットやログなど、他に役立ちそうな情報があれば記載してください。
