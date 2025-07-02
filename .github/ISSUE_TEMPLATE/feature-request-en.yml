@@ -1,0 +1,32 @@
+name: Feature Request
+description: Suggest a new feature or improvement for the application.
+title: "[Feature] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your suggestion! Please fill out the fields below.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: What feature would you like to propose?
+      placeholder: e.g. Add ability to toggle log level at runtime
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation / Background
+      description: Why is this feature important? What problem does it solve?
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Outcome
+      description: What benefit or change would this feature bring?
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other ideas or links related to the proposal.

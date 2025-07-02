@@ -1,0 +1,32 @@
+name: 機能提案（日本語）
+description: 改善点や新しい機能の提案はこちら
+title: "[提案] "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご提案ありがとうございます！以下の項目にご記入ください。
+  - type: input
+    id: summary
+    attributes:
+      label: 概要
+      description: どんな機能を提案されますか？
+      placeholder: 例: ログレベルを動的に切り替える機能
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 背景と目的
+      description: なぜその機能が必要なのか、どんな課題を解決するのか教えてください。
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する効果
+      description: その機能で何が良くなるか？
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足情報
+      description: 他のアイデアや参考リンクなどがあればご記入ください。

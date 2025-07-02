@@ -1,30 +1,36 @@
-## 📄 Summary
+## 📋 What this PR does / Why we need it
 
-Briefly explain what this PR does and why it's needed.
-
----
-
-## 🔧 Changes
-
-List the main changes introduced in this PR:
-
-- Added/updated/fixed ...
-- Refactored ...
-- Removed deprecated ...
+Briefly describe the purpose of this PR.
 
 ---
 
-## 🧪 Testing
+## 🧩 Which issue(s) this PR fixes
 
-Describe how you tested this change:
-
-- [ ] Ran unit tests
-- [ ] Manually verified behavior
-- [ ] CI passed
+Fixes #
+Related to #
 
 ---
 
-## 📎 Related Issues
+## 🛠️ What this PR does
 
-Closes #xxx  
-References #yyy
+- [ ] Adds new feature
+- [ ] Fixes a bug
+- [ ] Refactors code
+- [ ] Updates documentation
+
+---
+
+## 🧪 How to test this PR
+
+Steps or commands to validate the change:
+
+```sh
+# Example
+make test
+```
+
+---
+
+## 📝 Additional information
+
+Any additional context, screenshots, or notes.

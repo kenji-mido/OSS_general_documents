@@ -1,0 +1,43 @@
+name: Bug Report
+description: Use this form to report a bug in the application.
+title: "[BUG] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue! Please fill out the form below as best you can.
+  - type: input
+    id: overview
+    attributes:
+      label: Summary
+      description: Briefly describe what happened.
+      placeholder: e.g. App crashes on startup
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a step-by-step guide to reproduce the issue.
+      placeholder: |
+        1. Open the app
+        2. Go to settings
+        3. Click save → crash
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened instead?
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, version, how it was run (CLI, Docker, etc.)
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Logs, screenshots, or any other helpful info.
