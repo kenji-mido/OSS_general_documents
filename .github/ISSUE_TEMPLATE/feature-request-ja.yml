@@ -1,32 +1,38 @@
-name: 機能提案（日本語）
-description: 改善点や新しい機能の提案はこちら
-title: "[提案] "
-labels: [enhancement]
+name: 機能改善リクエスト
+description: 開発中の機能に関する詳細を提供
+labels: kind/feature
 body:
-  - type: markdown
+  - type: textarea
+    id: feature
     attributes:
-      value: |
-        ご提案ありがとうございます！以下の項目にご記入ください。
-  - type: input
-    id: summary
-    attributes:
-      label: 概要
-      description: どんな機能を提案されますか？
-      placeholder: 例: ログレベルを動的に切り替える機能
+      label: 何を追加してほしいですか？
+      description: |
+        提案する機能や改善について説明してください。
+        希望する機能と動作について、できるだけ具体的に記述してください。
     validations:
       required: true
+
   - type: textarea
-    id: motivation
+    id: rationale
     attributes:
-      label: 背景と目的
-      description: なぜその機能が必要なのか、どんな課題を解決するのか教えてください。
+      label: なぜこれが必要ですか？
+      description: |
+        この機能の動機を説明してください。
+        どのような問題を解決しますか？誰が恩恵を受けますか？
+        関連するユースケースやシナリオがあれば含めてください。
+    validations:
+      required: true
+
   - type: textarea
-    id: expected
+    id: alternatives
     attributes:
-      label: 期待する効果
-      description: その機能で何が良くなるか？
+      label: 代替案は検討しましたか？
+      description: |
+        検討した代替ソリューションや機能があれば、明確かつ簡潔に説明してください。
+
   - type: textarea
     id: additional
     attributes:
-      label: 補足情報
-      description: 他のアイデアや参考リンクなどがあればご記入ください。
+      label: 追加のコンテキスト
+      description: |
+        機能リクエストに関するその他のコンテキスト、モックアップ、例、参考資料などをここに追加してください。

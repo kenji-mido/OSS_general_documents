@@ -1,43 +1,95 @@
-name: バグ報告（日本語）
-description: アプリのバグを報告するためのテンプレートです。
-title: "[バグ] "
-labels: [bug]
+name: バグ報告
+description: ソフトウェアの動作中に遭遇したバグを報告
+labels: kind/bug
 body:
-  - type: markdown
-    attributes:
-      value: |
-        ご協力ありがとうございます！できる範囲でご記入ください。
-  - type: input
-    id: overview
-    attributes:
-      label: 概要
-      description: 簡潔に何が起きたのか説明してください。
-      placeholder: 例: アプリが起動時にクラッシュする
-    validations:
-      required: true
   - type: textarea
-    id: steps
+    id: problem
     attributes:
-      label: 再現手順
-      description: バグが発生する手順を具体的に記載してください。
-      placeholder: |
-        1. アプリを起動
-        2. 設定を開く
-        3. 保存を押すとクラッシュ
+      label: 何が起きましたか？
+      description: |
+        できるだけ詳しい情報を提供してください。情報が不足していると、バグの対応が遅れる可能性があります。
+        セキュリティに関連する問題の場合は、適切なセキュリティチャネルを通じて非公開で報告してください。
     validations:
       required: true
+
   - type: textarea
     id: expected
     attributes:
-      label: 期待される動作
-      description: 本来どうなっていてほしかったかを書いてください。
+      label: 何が起きることを期待していましたか？
+    validations:
+      required: true
+
   - type: textarea
-    id: environment
+    id: repro
     attributes:
-      label: 環境
-      description: OS, バージョン, 実行方法など
+      label: どのように再現できますか？（最小限かつ正確に）
+    validations:
+      required: true
+
   - type: textarea
     id: additional
     attributes:
-      label: 補足情報
-      description: ログ、スクリーンショットなどあればご記入ください。
+      label: その他知っておくべきことはありますか？
+
+  - type: textarea
+    id: version
+    attributes:
+      label: ソフトウェアのバージョン
+      value: |
+        <details>
+
+        ```console
+        # 出力をここに貼り付けてください
+        ```
+
+        </details>
+    validations:
+      required: true
+
+  - type: textarea
+    id: osVersion
+    attributes:
+      label: OSのバージョン
+      value: |
+        <details>
+
+        ```console
+        # Linux の場合:
+        $ cat /etc/os-release
+        # 出力をここに貼り付けてください
+        $ uname -a
+        # 出力をここに貼り付けてください
+
+        # Windows の場合:
+        C:\> wmic os get Caption, Version, BuildNumber, OSArchitecture
+        # 出力をここに貼り付けてください
+
+        # macOS の場合:
+        $ sw_vers
+        # 出力をここに貼り付けてください
+        ```
+
+        </details>
+
+  - type: textarea
+    id: runtime
+    attributes:
+      label: 実行環境
+      description: |
+        Dockerバージョン、コンテナランタイム、その他関連する環境の詳細
+      value: |
+        <details>
+
+        ```console
+        # 出力をここに貼り付けてください
+        ```
+
+        </details>
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 関連するログ出力
+      description: |
+        関連するログ出力をコピー＆ペーストしてください。自動的にコード形式でフォーマットされるため、バッククォートは不要です。
+      render: shell
