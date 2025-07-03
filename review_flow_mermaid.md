@@ -63,3 +63,66 @@ sequenceDiagram
   destroy F
   F ->> SSS: branch merged
 ```
+
+```mermaid
+sequenceDiagram
+    actor M as Internal Reviewers
+    actor T as 3rd Party Developer
+    participant PUB as Public Repo
+    participant PRIV as Private Repo
+    participant PCI as Private CI Pipeline
+    participant PUBCI as Public CI Pipeline
+
+    T ->> PUB: Fork action
+    create participant F as Forked Repo
+    PUB ->> F: Fork created
+    T ->> F: Create branch
+    T ->> F: Push commits
+    
+    create participant PR as Public Pull Request
+    F ->> PR: Create PR to Public Repo
+    
+    M ->> PR: Review PR content
+    M ->> PRIV: Copy PR changes
+    M ->> PRIV: Create review branch
+    
+    create participant PR2 as Private Pull Request
+    PRIV ->> PR2: Create PR in Private Repo
+    
+    PR2 ->>+ PRIV: Workflow run request
+    PRIV ->>+ M: Approval request
+    M ->>- PRIV: Approval granted
+    
+    PRIV ->>- PCI: Workflow run approval
+    PR2 ->>+ PCI: CI check execute
+    PCI ->>- PR2: CI checks passed
+    
+    M ->> PR2: PR Merge action
+    destroy PR2
+    PR2 ->> PRIV: Merge closed
+    
+    M ->> PUB: Clone request
+    PUB ->> PRIV: Clone
+    PRIV ->> PRIV: Squash merge Multiple commits
+    
+    create participant PR3 as Public Release PR
+    PRIV ->> PR3: Create PR to Public Repo
+    PR3 ->>+ PUB: Workflow run request
+    PUB ->>+ M: Approval request
+    M ->>- PUB: Approval granted
+    
+    PUB ->>- PUBCI: Workflow run approval
+    PR3 ->>+ PUBCI: CI check execute
+    PUBCI ->>- PR3: CI checks passed
+    
+    M ->> PR3: PR Merge action
+    destroy PR3
+    PR3 ->> PUB: Release merged
+    M ->> PR: Close PR with comment
+    PR ->> PR: Add comment explaining private processing
+    
+    destroy PR
+    PR ->> F: PR closed
+    destroy F
+    F ->> PUB: Fork cleaned
+```
