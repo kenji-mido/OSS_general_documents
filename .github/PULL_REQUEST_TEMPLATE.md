@@ -47,6 +47,16 @@ Examples:
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] New and existing unit tests pass locally with my changes
+- [ ] Code builds successfully and all tests pass
+- [ ] Required unit tests have been added
+- [ ] Linked to related issue(s)
+- [ ] DCO sign-off included (`git commit -s`)
+
+## Test Plan
+
+<!-- Describe how you tested your changes. Include any manual or automated tests performed. -->
+- [ ] Local testing completed
+- [ ] CI tests verified
 
 ## Special notes for your reviewer
 
