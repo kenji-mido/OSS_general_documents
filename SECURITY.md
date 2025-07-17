@@ -9,9 +9,9 @@ If you discover a security vulnerability,  please report them to Support AITRIOS
 - Descriptive Subject
 - Description
   - Repository URL
-  - Descrpition of the technical details of the vulnerabilities.
+  - Description of the technical details of the vulnerabilities.
   - A minimal example of the vulnerability. It is very important to let us know how we can reproduce your findings.  
-  - An explanation for who can expolit this vulnerability, and what they gain when doing so. Write an attack senario that demonstrates how your issue violates the use cases and security assumptions defined in the threat model. This will help us evaluate your report quickly, especially if the issue is complex.
+  - An explanation for who can exploit this vulnerability, and what they gain when doing so. Write an attack scenario that demonstrates how your issue violates the use cases and security assumptions defined in the threat model. This will help us evaluate your report quickly, especially if the issue is complex.
   - Whether this vulnerability is public or known to third parties. If it is, please provide details.
 
 
